@@ -1,18 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+
+
+
 * {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: #6290C8;
+  background-color: #0093E9;
+  background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+
+  
 }
 
 h1 {
   text-align: center;
   margin: 40px 0;
-  color: #fff;
+  color: rgb(238, 238, 238);
+  font-family: "Bungee Shade", cursive;
 }
 
 form {
