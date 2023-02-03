@@ -1,90 +1,109 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-  * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  body {
-    background-color: #6290C8;
-  }
+body {
+  background-color: #6290C8;
+}
 
-  h1 {
-    text-align: center;
-    margin: 40px 0;
-    color: #fff;
-    text-shadow: 3px 3px #1D3461;
-  }
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: #fff;
+}
 
+form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px 0 0 25px;
+  background-color: #376996;
+  color: #fff;
+}
+
+button[type="button"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: -4px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: #1f487e;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #1D3461;
+}
+
+#clearButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #829CBC;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#clearButton:hover {
+  background-color: #376996;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #376996;
+  border-radius: 25px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background-color: #1f487e;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 600px) {
   form {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    flex-direction: column;
+    align-items: center;
   }
 
   input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 25px 0 0 25px;
-    background-color: #376996;
-    color: #fff;
+    width: 80%;
+    margin: 10px 0;
   }
 
   button[type="button"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-left: -4px;
-    border: none;
-    border-radius: 0 25px 25px 0;
-    background-color: #1f487e;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  button[type="button"]:hover {
-    background-color: #1D3461;
-  }
-
-  #clearButton {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #829CBC;
-    color: #000;
-    border: 1px solid black;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-
-  #clearButton:hover {
-    background-color: #376996;
-    color: white;
-    border: 1px solid white;
-  }
-
-  ul {
-    padding: 0;
+    width: 80%;
+    margin: 10px 0;
   }
 
   li {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #376996;
-    border-radius: 25px;
-    color: #fff;
-    transition: all 0.3s ease;
+    width: 80%;
+    margin: 10px auto;
   }
-
-  li:hover {
-    background-color: #1f487e;
-  }
-
-  .checked {
-    text-decoration: line-through;
-  }
+}
