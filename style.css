@@ -42,7 +42,7 @@ input[type="text"] {
 button[type="button"] {
   padding: 10px 20px;
   font-size: 16px;
-  margin-left: -4px;
+  margin-left: -2px;
   border: none;
   border-radius: 0 25px 25px 0;
   background-color: #1f487e;
@@ -77,13 +77,13 @@ ul {
 li {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content:flex-start;
+  align-items:center;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 10px;
   background-color: #376996;
   border-radius: 25px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
 
@@ -91,9 +91,12 @@ li:hover {
   background-color: #1f487e;
 }
 
-.checked {
-  text-decoration: line-through;
-}
+.checked::after {
+
+  text-decoration: none;
+  content: "✅"
+ }
+
 
 a {
   text-decoration: none;
